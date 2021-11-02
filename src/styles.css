@@ -1,3 +1,40 @@
 body {
+  margin: 0 auto;
   font-family: sans-serif;
+  background: lightblue;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: navy;
+  width: 100vw;
+  padding-bottom: 1em;
+}
+
+.link {
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 0.7;
+  border-bottom: 1px solid #fff;
+}
+
+#name-form {
+  margin-top: 1em;
+}
+
+/* Desktop styles */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
